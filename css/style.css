@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3b4664;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 450px;
+  padding: 20px;
+  background-color: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* start Calc Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .left p {
+  margin-right: 5px;
+  margin-top: 20px;
+}
+.header .left .spans {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header .left .spans .top {
+  display: block;
+}
+.header .left .spans .bottom {
+  width: 100%;
+  height: 10px;
+  display: block;
+  border-radius: 20px;
+  background-color: #181f32;
+  cursor: pointer;
+}
+.header .left .spans .bottom .box {
+  width: 10px;
+  height: 10px;
+  background-color: #cb4032;
+  border-radius: 50%;
+  display: block;
+}
+/* start screen bar */
+.screen {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  background-color: #181f32;
+  border-radius: 10px;
+  text-align: right;
+  padding: 20px;
+  font-size: 30px;
+  overflow: hidden;
+}
+/* start CALC body */
+.calc-body {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #252d44;
+  padding: 20px;
+}
+.calc-body .row1,
+.calc-body .row2,
+.calc-body .row3,
+.calc-body .row4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.calc-body .row1 .row-item,
+.calc-body .row2 .row-item,
+.calc-body .row3 .row-item,
+.calc-body .row4 .row-item {
+  width: 20%;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  color: #3b4664;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #ebe4dc;
+  cursor: pointer;
+}
+.calc-body .row1 .row-item:last-child {
+  background-color: #3b4665;
+  color: white;
+}
+.calc-body .row5 {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.calc-body .row5 .reset {
+  width: 50%;
+  background-color: #3d4665;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.calc-body .row5 .equal {
+  width: 50%;
+  background-color: #cb4032;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
